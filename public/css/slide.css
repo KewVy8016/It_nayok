@@ -1,0 +1,230 @@
+.swiper {
+    width: 100%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+    /* ลด z-index ของ swiper */
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-container {
+    height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+    width: 100%; /* เพิ่มเข้ามา */
+    box-sizing: border-box; /* เพิ่มเข้ามา */
+}
+
+.news-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.news-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    box-sizing: border-box; /* เพิ่มเข้ามา */
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+.news-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%; /* เพิ่มเข้ามา */
+    box-sizing: border-box; /* เพิ่มเข้ามา */
+}
+
+.news-thumbnail {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0; /* เพิ่มเข้ามา - ป้องกันไม่ให้รูปหด */
+}
+
+.news-content {
+    flex: 1;
+    max-width: calc(100% - 60px); /* เพิ่มเข้ามา */
+    overflow: hidden; /* เพิ่มเข้ามา */
+}
+
+.news-title {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.news-excerpt {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.btn-sm {
+    font-size: 12px;
+    padding: 2px 8px;
+    white-space: nowrap; /* เพิ่มเข้ามา */
+}
+
+.modal-body img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.row {
+    display: flex; /* จัดให้ row ใช้ flexbox */
+    align-items: stretch; /* จัดให้ความสูงของ child เท่ากัน */
+}
+
+.col-md-7, .col-md-5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.swiper-pagination-bullet {
+    background: #fff;
+    opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+    background: #007bff;
+    opacity: 1;
+}
+
+.news-container {
+    height: 400px;
+    /* ความสูงเท่ากับ slider */
+    overflow-y: auto;
+    /* เพิ่ม scroll แนวตั้ง */
+    padding-right: 10px;
+    /* เพิ่มระยะห่างด้านขวาเพื่อให้ scroll bar ไม่ทับเนื้อหา */
+}
+
+/* ปรับแต่ง scrollbar ให้สวยงาม */
+.news-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.news-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* swiper ของ container ข่าวเด่น */
+.custom-swiper-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.custom-swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+/* เเก้ข้อความทะลุ Modal */
+.modal-title {
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.modal-body p {
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+/* ปรับขนาดการแสดงผลสำหรับมือถือ */
+@media (max-width: 767px) {
+    .swiper-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.75rem;
+        white-space: normal; /* ปรับให้ข้อความพอดีกับพื้นที่ */
+    }
+
+    .custom-swiper-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    /* ปรับขนาดของภาพ */
+    .bg-light img {
+        width: 80%;
+        height: 50%; /* ลดขนาดภาพลง */
+        height: auto; /* ให้ภาพมีอัตราส่วนที่ถูกต้อง */
+        object-fit: cover; /* ยังคงให้ภาพเต็มพื้นที่โดยไม่เสียอัตราส่วน */
+    }
+}
