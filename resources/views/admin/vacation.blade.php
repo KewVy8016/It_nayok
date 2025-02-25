@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/admin/teacher-form.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/admin/teacher-form.css') }}">
 @extends('layout-admin')
 
 @section('title', 'Table vocational')

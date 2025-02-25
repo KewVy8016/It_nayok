@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{asset('css/admin/formtrophy.css')}}">
+<link rel="stylesheet" href="{{secure_asset('css/admin/formtrophy.css')}}">
 @extends('layout-admin')
 
 @section('title', 'Form Add Trophy')
@@ -126,6 +126,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <script src="{{asset('js/form-add-trophy.js')}}">
+    <script src="{{secure_asset('js/form-add-trophy.js')}}">
     </script>
 @endsection

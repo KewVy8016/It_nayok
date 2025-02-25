@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/admin/teacher-form.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/admin/teacher-form.css') }}">
 @extends('layout-admin')
 
 @section('title', 'Form Add Teacher')
@@ -93,5 +93,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     {{-- <script src="{{ asset('js/ajax-form-add-new.js') }}"></script> --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
-    <script src="{{ asset('js/form-add-new.js') }}"></script>
+    <script src="{{ secure_asset('js/form-add-new.js') }}"></script>
 @endsection
