@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.4.1/swiper-bundle.min.css">
-<link rel="stylesheet" href="{{ asset('css/slide.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/slide.css') }}">
 
 <body>
     <div class="container ">
