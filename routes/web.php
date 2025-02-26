@@ -5,6 +5,14 @@ use App\Http\Controllers\AdminControl; //ต้องเรียก controller 
 use App\Http\Controllers\UserControl;
 use App\Http\Controllers\AdminAuthController;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
+
+//fix storage
+Route::get('/fix-storage', function () {
+    Artisan::call('storage:link');
+    return 'Storage linked successfully!';
+});
+
 
 //User Zone
 //หน้าหลัก
