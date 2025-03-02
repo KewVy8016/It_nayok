@@ -34,7 +34,7 @@ return [
             'driver' => 'local',
             'root' => public_path('/'),
             'serve' => true,
-            'throw' => false,
+            'throw' => true,
         ],
 
         'public' => [
@@ -42,7 +42,7 @@ return [
             'root' => public_path('/'),
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
-            'throw' => false,
+            'throw' => true,
         ],
 
         's3' => [
