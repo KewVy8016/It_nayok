@@ -37,7 +37,7 @@
                                 <td class="text-center">{{ $index + 1 }}</td>
                                 <td class="text-center py-3">
                                     <div class="slide-image-container">
-                                        <img src="{{ Storage::url($item->image) }}" class="img-thumbnail" alt="{{ $item->title }}">
+                                        <img src="{{ asset($item->image) }}" class="img-thumbnail" alt="{{ $item->title }}">
                                     </div>
                                 </td>
                                 <td>

@@ -40,7 +40,7 @@
                                 <td class="text-center py-3">
                                     <div class="teacher-image-container">
                                         @if (isset($teacher->image) && !empty($teacher->image))
-                                            <img src="{{ Storage::url($teacher->image) }}"
+                                            <img src="{{ asset($teacher->image) }}"
                                                 class="img-thumbnail rounded-circle" alt="รูปอาจารย์">
                                         @else
                                             <div
@@ -72,7 +72,7 @@
                                             data-nameprefix="{{ $teacher->nameprefix }}" data-name="{{ $teacher->name }}"
                                             data-lastname="{{ $teacher->lastname }}" data-tel="{{ $teacher->tel }}"
                                             data-position="{{ $teacher->position }}"
-                                            data-image="{{ isset($teacher->image) ? Storage::url($teacher->image) : '' }}"
+                                            data-image="{{ isset($teacher->image) ? asset($teacher->image) : '' }}"
                                             data-image-path="{{ $teacher->image }}">
                                             <i class="bi bi-pencil-square"></i>
                                         </button>

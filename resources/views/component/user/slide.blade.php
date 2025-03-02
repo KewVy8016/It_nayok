@@ -9,7 +9,7 @@
             <div class="swiper-wrapper">
                 @foreach ($slide as $item)
                     <div class="swiper-slide">
-                        <img src="{{ Storage::url($item['image']) }}" alt="Slide {{ $item['id'] }}">
+                        <img src="{{ asset($item['image']) }}" alt="Slide {{ $item['id'] }}">
                     </div>
                 @endforeach
             </div>

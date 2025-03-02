@@ -36,7 +36,7 @@
                             <td class="align-middle">{{ $item->name }}</td>
                             <td class="align-middle">{{ $item->year }}</td>
                             <td class="align-middle">
-                                <a href="{{ Storage::url($item->pathfile) }}" target="_blank" class="btn btn-info btn-sm">
+                                <a href="{{ asset($item->pathfile) }}" target="_blank" class="btn btn-info btn-sm">
                                     <i class="fas fa-file-pdf"></i> ดูไฟล์
                                 </a>
                             </td>

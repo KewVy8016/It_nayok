@@ -19,7 +19,7 @@
             <div class="card-body p-0">
                 <!-- รูปภาพด้านบน -->
                 <div class="trophy-image-wrapper">
-                    <img src="{{ Storage::url($trophy->image) }}" alt="รูปผลงาน" class="trophy-image">
+                    <img src="{{ asset($trophy->image) }}" alt="รูปผลงาน" class="trophy-image">
                 </div>
 
                 <div class="trophy-info p-4 p-lg-5">

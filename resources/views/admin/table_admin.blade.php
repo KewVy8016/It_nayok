@@ -38,7 +38,7 @@
                             @forelse($admins as $admin)
                                 <tr>
                                     <td>
-                                        <img src="{{ Storage::url($admin->image) }}" alt="Profile" class="rounded-circle"
+                                        <img src="{{ asset($admin->image) }}" alt="Profile" class="rounded-circle"
                                             style="width: 40px; height: 40px; object-fit: cover;">
                                     </td>
                                     <td>{{ $admin->username }}</td>
@@ -220,7 +220,7 @@
                         <div class="modal-body">
                             <div class="text-center mb-4">
                                 <div class="position-relative d-inline-block">
-                                    <img src="{{ Storage::url($admin->image) }}" alt="Profile"
+                                    <img src="{{ asset($admin->image) }}" alt="Profile"
                                         class="rounded-circle img-thumbnail"
                                         style="width: 120px; height: 120px; object-fit: cover;">
                                 </div>
@@ -334,7 +334,7 @@
                     </div>
                     <div class="modal-body text-center py-4">
                         <div class="mb-3">
-                            <img src="{{ Storage::url($admin->image) }}" alt="Profile"
+                            <img src="{{ asset($admin->image) }}" alt="Profile"
                                 class="rounded-circle border border-3 border-danger"
                                 style="width: 100px; height: 100px; object-fit: cover;">
                         </div>

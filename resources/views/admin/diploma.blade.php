@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ asset('css/admin/teacher-form.css') }}">
+<link rel="stylesheet" href="{{ secure_asset('css/admin/teacher-form.css') }}">
 @extends('layout-admin')
 
 @section('title', 'Table diploma')
@@ -36,7 +36,7 @@
                             <td class="align-middle">{{ $item->name }}</td>
                             <td class="align-middle">{{ $item->year }}</td>
                             <td class="align-middle">
-                                <a href="{{ Storage::url($item->pathfile) }}" target="_blank" class="btn btn-info btn-sm">
+                                <a href="{{ asset($item->pathfile) }}" target="_blank" class="btn btn-info btn-sm">
                                     <i class="fas fa-file-pdf"></i> ดูไฟล์
                                 </a>
                             </td>

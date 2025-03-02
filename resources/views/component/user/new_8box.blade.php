@@ -28,7 +28,7 @@
             <a href="{{ $item->url }}" target="_blank" class="text-decoration-none">
                 <div class="card news-card shadow-sm">
                     <div class="news-img-container">
-                        <img src="{{ Storage::url($item->image) }}" class="news-img" alt="{{ $item->name }}">
+                        <img src="{{ asset($item->image) }}" class="news-img" alt="{{ $item->name }}">
                     </div>
                     <div class="card-body bg-primary text-white">
                         <p class="card-text mb-0">{{ $item->name }}</p>

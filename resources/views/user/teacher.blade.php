@@ -112,7 +112,7 @@
                 <div class="col">
                     <div class="card h-100 staff-card text-center">
                         <div class="card-body">
-                            <img src="{{ Storage::url($item['image']) }}" class="staff-img mb-3 rounded-circle"
+                            <img src="{{ asset($item['image']) }}" class="staff-img mb-3 rounded-circle"
                                 alt="{{ $item->name }} photo">
                             <h5 class="card-title">
                                 {{ $item->nameprefix . ' ' . $item->name . '  ' . $item->lastname }}

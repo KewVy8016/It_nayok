@@ -40,7 +40,7 @@
                                 <td class="text-center">
                                     <div class="image-wrapper">
                                         @if($trophy->image)
-                                            <img src="{{ Storage::url($trophy->image) }}" alt="trophy image">
+                                            <img src="{{ asset($trophy->image) }}" alt="trophy image">
                                         @else
                                             <div class="no-image">
                                                 <i class="bi bi-image text-secondary"></i>
@@ -79,7 +79,7 @@
                                             data-date="{{ $trophy->date }}"
                                             data-teacher="{{ $trophy->teacher_name }}"
                                             data-student="{{ $trophy->student_name }}"
-                                            data-image="{{ $trophy->image ? Storage::url($trophy->image) : '' }}"
+                                            data-image="{{ $trophy->image ? asset($trophy->image) : '' }}"
                                             data-image-path="{{ $trophy->image }}">
                                             <i class="bi bi-pencil"></i>
                                         </button>

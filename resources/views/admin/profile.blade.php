@@ -13,7 +13,7 @@
                         <div class="text-center mb-4">
                             @if (Auth::guard('admins')->user()->image)
                                 <div class="position-relative d-inline-block">
-                                    <img src="{{ Storage::url(Auth::guard('admins')->user()->image) }}"
+                                    <img src="{{ asset(Auth::guard('admins')->user()->image) }}"
                                         class="rounded-circle img-thumbnail"
                                         style="width: 150px; height: 150px; object-fit: cover;" alt="Profile Image">
                                     <a href="#"

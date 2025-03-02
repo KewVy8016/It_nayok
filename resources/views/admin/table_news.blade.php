@@ -39,7 +39,7 @@
                                 <td class="text-center align-middle">{{ $item['id'] }}</td>
                                 <td class="text-center">
                                     <div class="image-wrapper">
-                                        <img src="{{ Storage::url($item['image_path']) }}" alt="news image">
+                                        <img src="{{ asset($item['image_path']) }}" alt="news image">
                                     </div>
                                 </td>
                                 <td class="align-middle">
@@ -65,7 +65,7 @@
                                             data-bs-target="#editNewsModal" data-id="{{ $item->id }}"
                                             data-title="{{ $item->title }}" data-describe="{{ $item->describe }}"
                                             data-category="{{ $item->category }}"
-                                            data-image="{{ Storage::url($item['image_path']) }}"
+                                            data-image="{{ asset($item['image_path']) }}"
                                             data-image-path="{{ $item['image_path'] }}">
                                             <i class="bi bi-pencil"></i>
                                         </button>

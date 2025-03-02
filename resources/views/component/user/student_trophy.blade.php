@@ -66,7 +66,7 @@
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="card project-card">
                 <div class="position-relative">
-                    <img src="{{ Storage::url($item['image']) }}" class="card-img-top project-image"
+                    <img src="{{ asset($item['image']) }}" class="card-img-top project-image"
                     alt="project">
                     <span class="badge bg-primary category-badge">{{ $item->trophy_type }}</span>
                 </div>

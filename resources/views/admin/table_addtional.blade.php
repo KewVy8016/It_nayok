@@ -37,7 +37,7 @@
                                 <td class="text-center align-middle">{{ $item->id }}</td>
                                 <td class="text-center">
                                     <div class="image-wrapper">
-                                        <img src="{{ Storage::url($item->image) }}" alt="{{ $item->name }} image">
+                                        <img src="{{ asset($item->image) }}" alt="{{ $item->name }} image">
                                     </div>
                                 </td>
                                 <td class="align-middle">
@@ -62,7 +62,7 @@
                                             data-bs-target="#editAdditionalModal" data-id="{{ $item->id }}"
                                             data-name="{{ $item->name }}" data-url="{{ $item->url }}"
                                             data-show="{{ $item->show }}" data-image-path="{{ $item->image }}"
-                                            data-image="{{ Storage::url($item->image) }}">
+                                            data-image="{{ asset($item->image) }}">
                                             <i class="bi bi-pencil"></i>
                                         </button>
                                         <a href="{{ route('delete-addtional', ['id' => $item->id]) }}" class="btn btn-danger btn-sm"
